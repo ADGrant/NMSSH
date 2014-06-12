@@ -121,9 +121,26 @@
 		18B4FE83188C8774004E05FF /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B4FE82188C8195004E05FF /* NMSSH+Protected.h */; };
 		18F1A2D218158D78000635AB /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F1A2D018158D78000635AB /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18F1A2D318158D78000635AB /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A2D118158D78000635AB /* NMSSHLogger.m */; };
+		49839E52194943F100D9C029 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49839E51194943F100D9C029 /* XCTest.framework */; };
+		49839E53194943F100D9C029 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A0963017D6A85F008B76FB /* Foundation.framework */; };
+		49839E55194943F100D9C029 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49839E54194943F100D9C029 /* UIKit.framework */; };
+		49839E5B194943F100D9C029 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49839E59194943F100D9C029 /* InfoPlist.strings */; };
+		49839E5D194943F100D9C029 /* NMSSH_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49839E5C194943F100D9C029 /* NMSSH_Tests.m */; };
+		49839E651949462900D9C029 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49839E641949462900D9C029 /* NMSSH.framework */; };
+		49839E661949468A00D9C029 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A0972417D6AAA8008B76FB /* libz.dylib */; };
 		E46F9E21188AC7010056E5DB /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E46F9E1F188AC7010056E5DB /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E46F9E22188AC7010056E5DB /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E46F9E20188AC7010056E5DB /* NMSFTPFile.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49839E5F194943F100D9C029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A0962317D6A85F008B76FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A0964E17D6A8C4008B76FB;
+			remoteInfo = NMSSH;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		181AD83B18F6CE1500EBB779 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
@@ -229,6 +246,14 @@
 		18B4FE82188C8195004E05FF /* NMSSH+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMSSH+Protected.h"; sourceTree = "<group>"; };
 		18F1A2D018158D78000635AB /* NMSSHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSSHLogger.h; sourceTree = "<group>"; };
 		18F1A2D118158D78000635AB /* NMSSHLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSSHLogger.m; sourceTree = "<group>"; };
+		49839E50194943F100D9C029 /* NMSSH Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NMSSH Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49839E51194943F100D9C029 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		49839E54194943F100D9C029 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		49839E58194943F100D9C029 /* NMSSH Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NMSSH Tests-Info.plist"; sourceTree = "<group>"; };
+		49839E5A194943F100D9C029 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49839E5C194943F100D9C029 /* NMSSH_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSSH_Tests.m; sourceTree = "<group>"; };
+		49839E5E194943F100D9C029 /* NMSSH Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMSSH Tests-Prefix.pch"; sourceTree = "<group>"; };
+		49839E641949462900D9C029 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMSSH.framework; path = Products/NMSSH.framework; sourceTree = "<group>"; };
 		E46F9E1F188AC7010056E5DB /* NMSFTPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSFTPFile.h; sourceTree = "<group>"; };
 		E46F9E20188AC7010056E5DB /* NMSFTPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSFTPFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +269,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49839E4D194943F100D9C029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49839E661949468A00D9C029 /* libz.dylib in Frameworks */,
+				49839E651949462900D9C029 /* NMSSH.framework in Frameworks */,
+				49839E52194943F100D9C029 /* XCTest.framework in Frameworks */,
+				49839E55194943F100D9C029 /* UIKit.framework in Frameworks */,
+				49839E53194943F100D9C029 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -251,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				18A0965217D6A8C4008B76FB /* NMSSH */,
+				49839E56194943F100D9C029 /* NMSSH Tests */,
 				18A0962D17D6A85F008B76FB /* Frameworks */,
 				18A0962C17D6A85F008B76FB /* Products */,
 			);
@@ -260,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				18A0964F17D6A8C4008B76FB /* NMSSH.framework */,
+				49839E50194943F100D9C029 /* NMSSH Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,8 +306,11 @@
 		18A0962D17D6A85F008B76FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49839E641949462900D9C029 /* NMSSH.framework */,
 				18A0972417D6AAA8008B76FB /* libz.dylib */,
 				18A0963017D6A85F008B76FB /* Foundation.framework */,
+				49839E51194943F100D9C029 /* XCTest.framework */,
+				49839E54194943F100D9C029 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -447,6 +489,25 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		49839E56194943F100D9C029 /* NMSSH Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49839E5C194943F100D9C029 /* NMSSH_Tests.m */,
+				49839E57194943F100D9C029 /* Supporting Files */,
+			);
+			path = "NMSSH Tests";
+			sourceTree = "<group>";
+		};
+		49839E57194943F100D9C029 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49839E58194943F100D9C029 /* NMSSH Tests-Info.plist */,
+				49839E59194943F100D9C029 /* InfoPlist.strings */,
+				49839E5E194943F100D9C029 /* NMSSH Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -568,6 +629,24 @@
 			productReference = 18A0964F17D6A8C4008B76FB /* NMSSH.framework */;
 			productType = "com.apple.product-type.bundle";
 		};
+		49839E4F194943F100D9C029 /* NMSSH Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49839E63194943F100D9C029 /* Build configuration list for PBXNativeTarget "NMSSH Tests" */;
+			buildPhases = (
+				49839E4C194943F100D9C029 /* Sources */,
+				49839E4D194943F100D9C029 /* Frameworks */,
+				49839E4E194943F100D9C029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49839E60194943F100D9C029 /* PBXTargetDependency */,
+			);
+			name = "NMSSH Tests";
+			productName = "NMSSH Tests";
+			productReference = 49839E50194943F100D9C029 /* NMSSH Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -577,6 +656,11 @@
 				CLASSPREFIX = NMSSH;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Nine Muses AB";
+				TargetAttributes = {
+					49839E4F194943F100D9C029 = {
+						TestTargetID = 18A0964E17D6A8C4008B76FB;
+					};
+				};
 			};
 			buildConfigurationList = 18A0962617D6A85F008B76FB /* Build configuration list for PBXProject "NMSSH-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -592,6 +676,7 @@
 			targets = (
 				18A0964E17D6A8C4008B76FB /* NMSSH */,
 				18A0965D17D6A97C008B76FB /* NMSSH Framework */,
+				49839E4F194943F100D9C029 /* NMSSH Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -601,6 +686,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49839E4E194943F100D9C029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49839E5B194943F100D9C029 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,7 +746,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49839E4C194943F100D9C029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49839E5D194943F100D9C029 /* NMSSH_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49839E60194943F100D9C029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A0964E17D6A8C4008B76FB /* NMSSH */;
+			targetProxy = 49839E5F194943F100D9C029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49839E59194943F100D9C029 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49839E5A194943F100D9C029 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		18A0964617D6A85F008B76FB /* Debug */ = {
@@ -777,6 +897,65 @@
 			};
 			name = Release;
 		};
+		49839E61194943F100D9C029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Products",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NMSSH Tests/NMSSH Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "NMSSH Tests/NMSSH Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		49839E62194943F100D9C029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Products",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NMSSH Tests/NMSSH Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "NMSSH Tests/NMSSH Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -806,6 +985,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		49839E63194943F100D9C029 /* Build configuration list for PBXNativeTarget "NMSSH Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49839E61194943F100D9C029 /* Debug */,
+				49839E62194943F100D9C029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
