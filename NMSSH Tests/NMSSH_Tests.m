@@ -30,9 +30,9 @@
 - (void)testConnection
 {
     NMSSHSession *session = [NMSSHSession connectToHost:@"192.168.0.18" withUsername:@"andrew"];
-    XCTAssert(session, @"Session NOT connected");
+    XCTAssertNotNil(session, @"Session NOT connected");
     [session authenticateByPassword:@"mbssucks"];
-    XCTAssert(session.authorized, @"Session NOT authorized");
+    XCTAssertTrue(session.authorized, @"Session NOT authorized");
 }
 
 @end
