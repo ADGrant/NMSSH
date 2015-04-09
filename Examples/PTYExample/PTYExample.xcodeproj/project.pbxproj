@@ -20,7 +20,22 @@
 		18AE8FE018BBF0C100AE0FC3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE8FDF18BBF0C100AE0FC3 /* libz.dylib */; };
 		18AE8FE218BBF0C700AE0FC3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE8FE118BBF0C700AE0FC3 /* CFNetwork.framework */; };
 		18AE8FE518BBF11B00AE0FC3 /* NMTerminalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8FE418BBF11B00AE0FC3 /* NMTerminalViewController.m */; };
+		49721DDC194C1CC00019FC42 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE8FC718BBEDD100AE0FC3 /* XCTest.framework */; };
+		49721DDD194C1CC00019FC42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE8FA818BBEDD000AE0FC3 /* Foundation.framework */; };
+		49721DDE194C1CC00019FC42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE8FAC18BBEDD000AE0FC3 /* UIKit.framework */; };
+		49721DE4194C1CC00019FC42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49721DE2194C1CC00019FC42 /* InfoPlist.strings */; };
+		49721DE6194C1CC00019FC42 /* PTYExample_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49721DE5194C1CC00019FC42 /* PTYExample_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49721DE8194C1CC00019FC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AE8F9D18BBEDD000AE0FC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AE8FA418BBEDD000AE0FC3;
+			remoteInfo = PTYExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18AE8FA518BBEDD000AE0FC3 /* PTYExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTYExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +58,11 @@
 		18AE8FE118BBF0C700AE0FC3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		18AE8FE318BBF11B00AE0FC3 /* NMTerminalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMTerminalViewController.h; sourceTree = "<group>"; };
 		18AE8FE418BBF11B00AE0FC3 /* NMTerminalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMTerminalViewController.m; sourceTree = "<group>"; };
+		49721DDB194C1CC00019FC42 /* PTYExample Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PTYExample Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49721DE1194C1CC00019FC42 /* PTYExample Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTYExample Tests-Info.plist"; sourceTree = "<group>"; };
+		49721DE3194C1CC00019FC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49721DE5194C1CC00019FC42 /* PTYExample_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTYExample_Tests.m; sourceTree = "<group>"; };
+		49721DE7194C1CC00019FC42 /* PTYExample Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTYExample Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49721DD8194C1CC00019FC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49721DDC194C1CC00019FC42 /* XCTest.framework in Frameworks */,
+				49721DDE194C1CC00019FC42 /* UIKit.framework in Frameworks */,
+				49721DDD194C1CC00019FC42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				18AE8FAE18BBEDD000AE0FC3 /* PTYExample */,
+				49721DDF194C1CC00019FC42 /* PTYExample Tests */,
 				18AE8FA718BBEDD000AE0FC3 /* Frameworks */,
 				18AE8FA618BBEDD000AE0FC3 /* Products */,
 			);
@@ -75,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				18AE8FA518BBEDD000AE0FC3 /* PTYExample.app */,
+				49721DDB194C1CC00019FC42 /* PTYExample Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +152,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49721DDF194C1CC00019FC42 /* PTYExample Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49721DE5194C1CC00019FC42 /* PTYExample_Tests.m */,
+				49721DE0194C1CC00019FC42 /* Supporting Files */,
+			);
+			path = "PTYExample Tests";
+			sourceTree = "<group>";
+		};
+		49721DE0194C1CC00019FC42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49721DE1194C1CC00019FC42 /* PTYExample Tests-Info.plist */,
+				49721DE2194C1CC00019FC42 /* InfoPlist.strings */,
+				49721DE7194C1CC00019FC42 /* PTYExample Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +191,24 @@
 			productReference = 18AE8FA518BBEDD000AE0FC3 /* PTYExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		49721DDA194C1CC00019FC42 /* PTYExample Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49721DEA194C1CC00019FC42 /* Build configuration list for PBXNativeTarget "PTYExample Tests" */;
+			buildPhases = (
+				49721DD7194C1CC00019FC42 /* Sources */,
+				49721DD8194C1CC00019FC42 /* Frameworks */,
+				49721DD9194C1CC00019FC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49721DE9194C1CC00019FC42 /* PBXTargetDependency */,
+			);
+			name = "PTYExample Tests";
+			productName = "PTYExample Tests";
+			productReference = 49721DDB194C1CC00019FC42 /* PTYExample Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +218,14 @@
 				CLASSPREFIX = NM;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Nine Muses";
+				TargetAttributes = {
+					18AE8FA418BBEDD000AE0FC3 = {
+						DevelopmentTeam = 8CSGDKY4WV;
+					};
+					49721DDA194C1CC00019FC42 = {
+						TestTargetID = 18AE8FA418BBEDD000AE0FC3;
+					};
+				};
 			};
 			buildConfigurationList = 18AE8FA018BBEDD000AE0FC3 /* Build configuration list for PBXProject "PTYExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -164,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				18AE8FA418BBEDD000AE0FC3 /* PTYExample */,
+				49721DDA194C1CC00019FC42 /* PTYExample Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -176,6 +254,14 @@
 				18AE8FC118BBEDD100AE0FC3 /* Images.xcassets in Resources */,
 				18AE8FB318BBEDD000AE0FC3 /* InfoPlist.strings in Resources */,
 				18AE8FBC18BBEDD100AE0FC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49721DD9194C1CC00019FC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49721DE4194C1CC00019FC42 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +279,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49721DD7194C1CC00019FC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49721DE6194C1CC00019FC42 /* PTYExample_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49721DE9194C1CC00019FC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AE8FA418BBEDD000AE0FC3 /* PTYExample */;
+			targetProxy = 49721DE8194C1CC00019FC42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18AE8FB118BBEDD000AE0FC3 /* InfoPlist.strings */ = {
@@ -210,6 +312,14 @@
 				18AE8FBB18BBEDD100AE0FC3 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49721DE2194C1CC00019FC42 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49721DE3194C1CC00019FC42 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,6 +400,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Products\"",
@@ -298,6 +410,7 @@
 				GCC_PREFIX_HEADER = "PTYExample/PTYExample-Prefix.pch";
 				INFOPLIST_FILE = "PTYExample/PTYExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -307,6 +420,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Products\"",
@@ -315,7 +430,62 @@
 				GCC_PREFIX_HEADER = "PTYExample/PTYExample-Prefix.pch";
 				INFOPLIST_FILE = "PTYExample/PTYExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		49721DEB194C1CC00019FC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTYExample.app/PTYExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SRCROOT)/../../Products",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTYExample Tests/PTYExample Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "PTYExample Tests/PTYExample Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		49721DEC194C1CC00019FC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTYExample.app/PTYExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SRCROOT)/../../Products",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTYExample Tests/PTYExample Tests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "PTYExample Tests/PTYExample Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -339,6 +509,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		49721DEA194C1CC00019FC42 /* Build configuration list for PBXNativeTarget "PTYExample Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49721DEB194C1CC00019FC42 /* Debug */,
+				49721DEC194C1CC00019FC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
