@@ -3,11 +3,9 @@ Products/
 build/
 NMSSHTests/Settings/config.yml
 .DS_Store
-xcworkspacedata
 xcuserdata
 *.xcuserstate
 *.xcscheme
 NMSSH.framework
-*.xcworkspacedata
 *.xccheckout
 *.swp
