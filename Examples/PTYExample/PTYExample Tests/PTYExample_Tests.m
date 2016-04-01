@@ -29,7 +29,7 @@
 
 - (void)testConnection
 {
-    NMSSHSession *session = [NMSSHSession connectToHost:@"10.0.1.4" withUsername:@"andrew"];
+    NMSSHSession *session = [NMSSHSession connectToHost:@"10.0.1.36" withUsername:@"andrew"];
     XCTAssertNotNil(session, @"Session NOT connected");
     [session authenticateByPassword:@"mbssucks"];
     XCTAssertTrue(session.authorized, @"Session NOT authorized");
