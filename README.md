@@ -1,4 +1,4 @@
-# NMSSH
+# NMSSH [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 NMSSH is a clean, easy-to-use, unit tested framework for iOS and OSX that wraps libssh2.
 
@@ -12,6 +12,10 @@ If you encounter an issue or have any questions about implementing NMSSH, please
 
     pod 'NMSSH'
 
+### Carthage
+
+    github "NMSSH/NMSSH"
+
 ### Build from source
 
 Consult the Wiki for detailed information about how to:
@@ -22,6 +26,10 @@ Consult the Wiki for detailed information about how to:
 ### Include it in your project
 
 Add `#import <NMSSH/NMSSH.h>` to your source file.
+
+### OpenSSL and Libssh2 binaries
+
+NMSSH includes a precompiled version of Libssh2 and OpenSSL compiled with [this script](https://github.com/Frugghi/iSSH2). You can easily recompile the libraries and replace the binaries.
 
 ## What does it look like?
 
